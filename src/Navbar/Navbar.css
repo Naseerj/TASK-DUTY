@@ -1,0 +1,70 @@
+
+
+.firstdiv{
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+}
+.secondiv{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    flex-wrap: nowrap;
+    width: 20%;
+    align-items: center;
+}
+.Naseer{
+    width: 40px;
+    border-radius: 20px;
+    clip-path: circle();
+}
+.Ellipse{
+    position: absolute;
+    /* right: 20px; */
+    width: 8px;
+    top: 12px;
+    left: calc(80% + 29px) ;
+    /* position: relative; */
+    /* bottom: 10000px; */
+    /* right: 0; */
+}
+.hamburger div{
+   display: none;
+}
+
+@media (max-width: 1200px) {
+    .secondiv{
+        width: 25%;
+    }
+}
+@media (max-width: 860px) {
+    .secondiv{
+        width: 30%;
+    }
+}
+@media (max-width: 784px) {
+    .secondiv{
+        width: 33%;
+    }
+}
+@media (max-width: 650px) {
+    .secondiv{
+        display: none;
+    }
+    .hamburger div{
+        display: block;
+        width: 40px;
+        height: 6px;
+        background-color: purple;
+        margin-top: 2px;
+        align-items: center;
+    }
+    .hamburger{
+        align-items: center;
+        margin-top: 7px;
+    }
+    .Ellipse{
+        display: none;
+    }
+    
+}
