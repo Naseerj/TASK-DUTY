@@ -3,7 +3,7 @@
 .firstdiv{
     display: flex;
     justify-content: space-around;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 .secondiv{
     display: flex;
@@ -28,8 +28,12 @@
     /* bottom: 10000px; */
     /* right: 0; */
 }
-.hamburger div{
+.hamburger {
    display: none;
+}
+.dropdown{
+    display: none;
+    /* transition: ; */
 }
 
 @media (max-width: 1200px) {
@@ -52,7 +56,7 @@
         display: none;
     }
     .hamburger div{
-        display: block;
+        /* display: block; */
         width: 40px;
         height: 6px;
         background-color: purple;
@@ -62,9 +66,18 @@
     .hamburger{
         align-items: center;
         margin-top: 7px;
+        display: block;
     }
     .Ellipse{
         display: none;
+    }
+    .dropdown{
+        
+        background-color: green;
+        width: 50%;
+        /* height: 200px; */
+        position: absolute;
+        top: 5%;
     }
     
 }

@@ -1,0 +1,39 @@
+.textdiv {
+  /* background-color: bisque; */
+  width: 500px;
+  /* margin-left: 100px; */
+}
+.parentdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px;
+  
+}
+.ptag1 {
+  font-family: Signika Negative;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.btn1{
+    padding: 10px;
+    background: #974FD0;
+    border-radius: 8px;
+}
+.header1{
+    font-family: 'Signika Negative';
+font-style: normal;
+font-weight: 500;
+font-size: 50px;
+line-height: 62px;
+
+color: #292929;
+text-align: left;
+}
+.span1{
+    color: #974FD0;
+
+}
