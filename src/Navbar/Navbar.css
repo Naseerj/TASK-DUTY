@@ -4,6 +4,9 @@
     display: flex;
     justify-content: space-around;
     /* background-color: aqua; */
+    width: 100%;
+    align-content: center;
+    /* margin: 0 auto; */
 }
 .secondiv{
     display: flex;
@@ -23,10 +26,14 @@
     /* right: 20px; */
     width: 8px;
     top: 12px;
-    left: calc(80% + 29px) ;
+    left: calc(80% + 111px) ;
     /* position: relative; */
     /* bottom: 10000px; */
     /* right: 0; */
+}
+.link1{
+    text-align: center;
+    text-decoration: none;
 }
 .hamburger {
    display: none;

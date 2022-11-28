@@ -1,0 +1,147 @@
+.Arrowflex {
+  display: flex;
+  width: 180px;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  margin-right: 0;
+}
+.parent1 {
+  text-align: left;
+  /* height: 500px; */
+  width: 1100px;
+  /* height: 80px; */
+  /* margin: 0 auto; */
+  margin: 0 auto; 
+}
+
+.firstinput {
+  height: 84px;
+  /* width: 1100px; */
+width: 1124px;
+
+  border-radius: 5px;
+  margin: 0 auto;
+  font-size: 30px;
+  padding: 10px;
+  /* position: relative; */
+  /* margin-bottom: 20px; */
+}
+.btnew{
+  /* height: 84px;
+  width: 1100px;
+  border-radius: 5px;
+  margin: 0 auto;
+  font-size: 30px;
+  padding: 10px; */
+  font-family: Signika Negative;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: 0em;
+  color: white;
+  /* text-align: left; */
+  
+
+  margin: 0% auto;
+  background-color: #974fd0;
+  height: 84px;
+width: 1160px;
+left: 170px;
+top: 935px;
+border-radius: 8px;
+padding: 10px 25px 10px 25px;
+
+}
+.top{
+  font-family: Signika Negative;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+.topdiv{
+  margin-top: 40px;
+
+}
+.txt {
+  height: 244px;
+  /* width: 1100px; */
+width: 1124px;
+
+  margin: 0 auto;
+font-size: 30px;
+  left: 170px;
+  top: 456px;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+  /* margin-top: 20px; */
+}
+.form1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1000px;
+  margin: 0% auto;
+}
+.position1{
+position: absolute;
+background-color: white;
+/* top: 0; */
+left: 200px;
+bottom: 89px;
+height: 60px;
+/* width: 150px */
+}
+.position2{
+  position: absolute;
+  left: 200px;
+bottom: 260px;
+height: 60px;
+background-color: white;
+
+}
+.position3{
+  position: absolute;
+  left: 200px;
+bottom: 80px;
+height: 60px;
+background-color: white;
+
+}
+.secondinput {
+  height: 84px;
+  width: 1150px;
+  left: 170px;
+  top: 768px;
+  border-radius: 5px;
+  margin: 0 auto;
+  font-size: 30px;
+  /* margin-top: 60px; */
+}
+.select{
+  height: 84px;
+  width: 1100px;
+  border-radius: 5px;
+  margin: 0 auto;
+  font-size: 30px;
+  padding: 10px;
+}
+.fulldiv {
+  margin-top: 5%;
+  /* margin: 0 auto; */
+}
+.divthree{
+  margin-top: 5%;
+  position: relative;
+
+}
+.divtwo{
+  margin-top: 6%;
+  position: relative;
+}
+.divone{
+  position: relative;
+}
