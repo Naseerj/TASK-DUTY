@@ -71,7 +71,7 @@ const handleSubmit =(e)=>{
           </div>
         </div>
         <div className="divthree">
-          <input ref={headerRef} onChange={(e)=>{
+          <input  onChange={(e)=>{
             setTags(e.target.value)
           }} className="secondinput" type="text" />
           <div className="position3">

@@ -37,19 +37,20 @@ const MyTask = () => {
   const redirect = useNavigate();
   const url1 = `http://localhost:7000/tasks/${id}`;
 
-  const handleDelete = () => {
+  ;
+  const handleDelete = ()=>{
     fetch(url1, {
-      method: "DELETE",
+      method: 'DELETE'
     }).then(() => {
-      redirect("/");
-    });
-  };
+      redirect('/')
+    })
+  }
 
   return (
     <div>
       <Navbar text2={"New Task"} />
       <div className="flex1">
-        <h1>My Tasks</h1>
+        <h1 className="mytasktext">My Tasks</h1>
         <div className="plus">
           <img className="imgplus" src={plus} alt="" />
           <Link to="/newtask">
@@ -65,18 +66,18 @@ const MyTask = () => {
             return (
               <div className="tag" key={task.id}>
                 <div className="flextest" key={task.id}>
-                  <h1> {task.tags} </h1>
+                  <h1 className="tagstext"> {task.tags} </h1>
                   <div className="deletetest">
-                    <Link to={`/editask/${task._id}`}>
+                    <Link className="editlink" to={`/editask/${task._id}`}>
                       <div className="editdiv">
                         <img className="editimg" src={editicon} alt="" />{" "}
-                        <h1>Edit</h1>
+                        <h1 className="editext">Edit</h1>
                       </div>
                     </Link>
-                    <Link to={`/${task._id}`}>
+                    <Link className="deletelink" to={`/${task._id}`}>
                       <div className="deletediv" onClick={handleDelete}>
                         <img className="delete" src={deleteicon} alt="" />
-                        <h1>Delete</h1>
+                        <h1 className="deletetext">Delete</h1>
                       </div>
                     </Link>
                   </div>
@@ -98,7 +99,3 @@ const MyTask = () => {
 
 export default MyTask;
 
-{
-  /* <Link to={`/${_id}`}><button> View Task</button></Link>
-<Link to={`/edit/${_id}`}><button> Edit Task</button></Link> */
-}
