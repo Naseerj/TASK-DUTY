@@ -6,6 +6,7 @@ import MyTask from "./Pages/My Tasks/MyTask";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NewTask from "./Pages/NewTask/NewTask";
 import EditTask from "./Pages/EditTask/EditTask";
+import Test from "./Pages/Test/Test";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
           <Route path="/mytask" element={<MyTask />} />
           <Route path="/newtask" element={<NewTask />} />
           <Route path="/editask/:id" element={<EditTask />} />
+          <Route path="/test" element={<Test />} />
+
         </Routes>
       </BrowserRouter>
     </div>

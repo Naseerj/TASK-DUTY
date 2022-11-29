@@ -7,21 +7,24 @@ import "./EditTask.css";
 
 
 const EditTask = () => {
+  const { id } = useParams();
+  const url = `http://localhost:7000/tasks/${id}`;
+  const redirect = useNavigate()
+
+
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [tags, setTags] = useState("");
-  const redirect = useNavigate()
 
-  const { id } = useParams();
-  const url = `http://localhost:7000/tasks/${id}`;
+  
 
   const updateData = () => {
     fetch(url)
       .then((res) => res.json())
       .then((result) => {
-        console.log(result);
+        // console.log(result);
         const { msg } = result;
-        console.log(msg);
+        // console.log(msg);
         setTitle(msg.title);
         setDescription(msg.description);
         setTags(msg.tags)
@@ -60,10 +63,11 @@ const EditTask = () => {
           </div>
           <div className="divone">
             <input
+            value={title}
               onChange={(e) => {
                 setTitle(e.target.value);
               }}
-              value={title}
+              
               className="firstinput"
               type="text"
               placeholder="E.g Project Defense, Assignment ..."
@@ -74,6 +78,7 @@ const EditTask = () => {
           </div>
           <div className="divtwo">
             <textarea
+             value={description}
               className="txt"
               name=""
               id=""
@@ -83,7 +88,7 @@ const EditTask = () => {
               onChange={(e) => {
                 setDescription(e.target.value);
               }}
-              value={description}
+             
             ></textarea>
             <div className="position2">
               <h1>Description</h1>
@@ -91,12 +96,13 @@ const EditTask = () => {
           </div>
           <div className="divthree">
             <input
+                 value={tags}
               onChange={(e) => {
                 setTags(e.target.value);
               }}
               className="secondinput"
               type="text"
-              value={tags}
+         
             />
             <div className="position3">
               <h1>Tags</h1>
@@ -107,7 +113,7 @@ const EditTask = () => {
           <option value="">Important</option>
 
         </select> */}
-          <button type="submit" onSubmit={handleUpdate} className="btnew">
+          <button type="submit" onClick={handleUpdate} className="btnew">
             Done
           </button>
         </form>

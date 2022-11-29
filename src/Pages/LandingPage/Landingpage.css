@@ -43,7 +43,48 @@ text-align: left;
     color: #974FD0;
 
 }
-@media (max-width: 1180px) {
+
+@media  (max-width: 1160px){
+/* .ptag1{
+  width: 450px;
+  font-size: 22px;
+}
+.header1{
+  font-size: 45px;
+} */
+.textdiv{
+  /* width: 400px; */
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 1180px) {
   .textdiv{
     width: 400px;
   }
@@ -145,4 +186,4 @@ text-align: left;
     font-size: 16px;
     width: 280px;
   }
-}
+} */
