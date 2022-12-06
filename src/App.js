@@ -4,9 +4,11 @@ import "./App.css";
 import Landingpage from "./Pages/LandingPage/Landingpage";
 import MyTask from "./Pages/My Tasks/MyTask";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NewTask from "./Pages/NewTask/NewTask";
+// import NewTask from "./Pages/NewTask/NewTask";
 import EditTask from "./Pages/EditTask/EditTask";
-import Test from "./Pages/Test/Test";
+// import Test from "./Pages/Test/Test";
+import NewTask from "./Pages/Test/NewTask";
+import Test2 from "./Pages/Test2/Test2";
 
 function App() {
   return (
@@ -16,9 +18,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Landingpage />} />
           <Route path="/mytask" element={<MyTask />} />
-          <Route path="/newtask" element={<NewTask />} />
+          {/* <Route path="/newtask" element={<NewTask />} /> */}
           <Route path="/editask/:id" element={<EditTask />} />
-          <Route path="/test" element={<Test />} />
+          <Route path="/newtask" element={<NewTask />} />
+          <Route path="/test2/:id" element={<Test2 />} />
 
         </Routes>
       </BrowserRouter>

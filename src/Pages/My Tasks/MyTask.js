@@ -38,9 +38,9 @@ const MyTask = () => {
   const url1 = `http://localhost:7000/tasks/${id}`;
 
   ;
-  const handleDelete = ()=>{
+  const handleDelete = (id)=>{
     fetch(url1, {
-      method: 'DELETE'
+      method: 'DELETE',
     }).then(() => {
       redirect('/')
     })
@@ -48,7 +48,7 @@ const MyTask = () => {
 
   return (
     <div>
-      <Navbar text2={"New Task"} />
+      <Navbar text1={"New Task"} />
       <div className="flex1">
         <h1 className="mytasktext">My Tasks</h1>
         <div className="plus">
@@ -68,14 +68,14 @@ const MyTask = () => {
                 <div className="flextest" key={task.id}>
                   <h1 className="tagstext"> {task.tags} </h1>
                   <div className="deletetest">
-                    <Link className="editlink" to={`/editask/${task._id}`}>
+                    <Link className="editlink" to={`/test2/${task._id}`}>
                       <div className="editdiv">
                         <img className="editimg" src={editicon} alt="" />{" "}
                         <h1 className="editext">Edit</h1>
                       </div>
                     </Link>
                     <Link className="deletelink" to={`/${task._id}`}>
-                      <div className="deletediv" onClick={handleDelete}>
+                      <div className="deletediv" onClick={handleDelete(task._id)}>
                         <img className="delete" src={deleteicon} alt="" />
                         <h1 className="deletetext">Delete</h1>
                       </div>

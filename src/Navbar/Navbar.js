@@ -3,8 +3,7 @@ import "./Navbar.css";
 import Logo from "../Images/Group 2.svg";
 import Naseer from "../Images/Naseer2.jpg";
 import Ellipse from "../Images/Ellipse 2.svg";
-import  { Link} from 'react-router-dom'
-
+import { Link } from "react-router-dom";
 
 const Navbar = ({ text1, text2 }) => {
   const dropdownRef = useRef();
@@ -30,16 +29,23 @@ const Navbar = ({ text1, text2 }) => {
   return (
     <div>
       <div className="firstdiv">
-        <Link className="link1" to='/'><img src={Logo} alt="" /></Link>
-      <div>
-        
-      </div>
+        <Link className="link1" to="/">
+          <img src={Logo} alt="" />
+        </Link>
+        <div></div>
         <div className="secondiv">
-       <Link to='/newtask'> <h3>{text1}</h3></Link>
-        <Link to='/mytask'> <h3>{text2}</h3></Link>
-          <img className="Naseer" src={Naseer} alt="" />
-
-          <img className="Ellipse" src={Ellipse} alt="" />
+          <Link to="/newtask">
+            {" "}
+            <h3>{text1}</h3>
+          </Link>
+          <Link to="/mytask">
+            {" "}
+            <h3>{text2}</h3>
+          </Link>
+          <div className="post">
+            <img className="Naseer" src={Naseer} alt="" />
+            <img className="Ellipse" src={Ellipse} alt="" />
+          </div>
         </div>
         <div ref={dropdownRef} className="dropdown">
           <h3>{text1}</h3>

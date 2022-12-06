@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./NewTask.css";
+import "./NewTask1.css";
 import Arrow from "../../Images/Vector (26).svg";
 import Navbar from "../../Navbar/Navbar";
 import {useState} from 'react'
@@ -83,7 +83,7 @@ const handleSubmit =(e)=>{
           <option value="">Important</option>
 
         </select> */}
-        <button className="btnew">Done</button>
+        <button className="btnew2">Done</button>
       </form>
       <div className="topdiv">
       <a  className="top" href="">Back To Top</a>
