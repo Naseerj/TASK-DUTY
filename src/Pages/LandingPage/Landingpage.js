@@ -8,7 +8,6 @@ const Landingpage = () => {
   return (
     <div>
       <Navbar text1= {'New Task'} text2 = {'All Tasks'} />
-
      <div className="parentdiv">
      <div className="textdiv">
       <h1 className="header1">Manage your Tasks on <span className="span1">TaskDuty</span></h1>

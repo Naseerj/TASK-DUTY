@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Navbar from '../../Navbar/Navbar';
 import { useParams, } from 'react-router-dom';
 import { useNavigate, } from 'react-router-dom';
@@ -16,6 +16,7 @@ const Test2 = () => {
     const [tags, setTags] = useState("");
   
     
+    
   
     const updateData = () => {
       fetch(url)
@@ -29,6 +30,7 @@ const Test2 = () => {
           setTags(msg.tags)
         });
     };
+    
   
     useEffect(() => {
       updateData();
@@ -93,7 +95,7 @@ const Test2 = () => {
             }} className="testinp" type="text" name="" id="" />
           </fieldset>
           <button onClick={(handleUpdate)} className="btnew">Done</button>
-        <a href="">Back To Top</a>
+        <a className='top' href="#">Back To Top</a>
         </form>
 
     </div>

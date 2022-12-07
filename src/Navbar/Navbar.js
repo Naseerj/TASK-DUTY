@@ -30,15 +30,15 @@ const Navbar = ({ text1, text2 }) => {
     <div>
       <div className="firstdiv">
         <Link className="link1" to="/">
-          <img src={Logo} alt="" />
+          <img className="taskduty" src={Logo} alt="" />
         </Link>
         <div></div>
         <div className="secondiv">
-          <Link to="/newtask">
+          <Link className="text1link" to="/newtask">
             {" "}
             <h3>{text1}</h3>
           </Link>
-          <Link to="/mytask">
+          <Link className="text2link" to="/mytask">
             {" "}
             <h3>{text2}</h3>
           </Link>
@@ -51,7 +51,9 @@ const Navbar = ({ text1, text2 }) => {
           <h3>{text1}</h3>
           <h3>{text2}</h3>
         </div>
-        <div onClick={handleDrop} className="hamburger">
+
+        {/* HAMBURGER HERE */}
+        <div  onClick={handleDrop} className="hamburger">
           <div ref={div1Rf}></div>
           <div ref={div2Rf}></div>
           <div ref={div3Rf}></div>

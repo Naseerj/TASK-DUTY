@@ -14,6 +14,9 @@ const Test = () => {
 
   const url = "http://localhost:7000/tasks";
   const redirect = useNavigate()
+  const tagRef = useRef()
+
+
 
 const handleSubmit =(e)=>{
    e.preventDefault();
@@ -69,12 +72,12 @@ const handleSubmit =(e)=>{
           </fieldset>
           <fieldset className="fieldtest1">
             <legend className="legend1">Tags</legend>
-            <input onChange={(e)=>{
+            <input ref={tagRef} onChange={(e)=>{
                  setTags(e.target.value);
             }} className="testinp" type="text" name="" id="" />
           </fieldset>
           <button className="btnew">Done</button>
-        <a href="">Back To Top</a>
+        <a className="top" href="#">Back To Top</a>
         </form>
 
     </div>

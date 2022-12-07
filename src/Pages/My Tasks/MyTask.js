@@ -35,11 +35,11 @@ const MyTask = () => {
   const { id } = useParams();
 
   const redirect = useNavigate();
-  const url1 = `http://localhost:7000/tasks/${id}`;
+  // const url1 = `http://localhost:7000/tasks/${id}`;
 
   ;
   const handleDelete = (id)=>{
-    fetch(url1, {
+    fetch(`http://localhost:7000/tasks/${id}`, {
       method: 'DELETE',
     }).then(() => {
       redirect('/')
@@ -75,7 +75,7 @@ const MyTask = () => {
                       </div>
                     </Link>
                     <Link className="deletelink" to={`/${task._id}`}>
-                      <div className="deletediv" onClick={handleDelete(task._id)}>
+                      <div className="deletediv" onClick={()=>handleDelete(task._id)}>
                         <img className="delete" src={deleteicon} alt="" />
                         <h1 className="deletetext">Delete</h1>
                       </div>
@@ -92,7 +92,7 @@ const MyTask = () => {
           })}
         </section>
       </div>
-      <h3 className="Top">Back To Top</h3>
+      <a href="#" className="top">Back To Top</a>
     </div>
   );
 };

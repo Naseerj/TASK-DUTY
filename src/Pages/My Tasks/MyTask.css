@@ -17,6 +17,7 @@
 .Top {
   text-decoration: underline;
   color: #974fd0;
+  /* scroll-behavior: smooth; */
 }
 .imgplus {
   width: 20px;
@@ -136,6 +137,9 @@
 }
 .editext {
   color: white;
+}
+html{
+  scroll-behavior: smooth;
 }
 @media (max-width: 1300px) {
   .deletediv{
