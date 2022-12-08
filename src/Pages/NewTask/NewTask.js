@@ -21,14 +21,22 @@ const Test = () => {
 const handleSubmit =(e)=>{
    e.preventDefault();
     const msg = {title, description, tags}
+    if(tags === 'urgent'){
+      tagRef.current.style.color = 'green'
+    }else{
+      console.log('hello')
+    }
+
     fetch(url, {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(msg)
       }).then(()=>{
-        redirect('/')
+        // redirect('/')
+        console.log('done')
     })
   
+   
 }
   return (
 

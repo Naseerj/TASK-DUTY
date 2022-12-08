@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import "./MyTask.css";
@@ -19,7 +19,10 @@ const MyTask = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet quis nibh posuere non tempor. Erat mattis gravida pulvinar nibh aliquam faucibus et magna. Interdum eu tempus ultricies cras neque mi. Eget tellus suspendisse et viverra.",
     },
   ]);
+  const tagRef2 = useRef()
   const url = "http://localhost:7000/tasks";
+
+ 
   const fetchData = () => {
     fetch(url)
       .then((res) => res.json())
@@ -27,6 +30,11 @@ const MyTask = () => {
         const { msg } = result;
         console.log(msg);
         setTasks(msg);
+        if(tasks.tags === 'urgent'){
+          tagRef2.current.style.color = 'green'
+        }else{
+          console.log('bad boy')
+        }
       });
   };
   useEffect(() => {
@@ -67,6 +75,7 @@ const MyTask = () => {
               <div className="tag" key={task.id}>
                 <div className="flextest" key={task.id}>
                   <h1 className="tagstext"> {task.tags} </h1>
+                  {/* {tasks.tags === 'urgent'? 'red': 'green' } */}
                   <div className="deletetest">
                     <Link className="editlink" to={`/test2/${task._id}`}>
                       <div className="editdiv">

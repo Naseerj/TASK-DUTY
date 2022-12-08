@@ -42,7 +42,10 @@
   display: none;
 }
 .dropdown {
+  width: 100%;
   display: none;
+  /* transform: rotateY(360deg); */
+  /* transition: 5ms; */
   /* transition: ; */
 }
 .post {
@@ -56,6 +59,7 @@
   text-decoration: none;
   color: #292929;
 }
+
 @media (max-width: 1200px) {
   .secondiv {
     width: 25%;

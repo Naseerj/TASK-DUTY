@@ -48,8 +48,8 @@ const Navbar = ({ text1, text2 }) => {
           </div>
         </div>
         <div ref={dropdownRef} className="dropdown">
-          <h3>{text1}</h3>
-          <h3>{text2}</h3>
+          <Link to='/newtask'><h3>{text1}</h3></Link>
+          <Link to='/mytask'><h3>{text2}</h3></Link>
         </div>
 
         {/* HAMBURGER HERE */}
@@ -58,7 +58,11 @@ const Navbar = ({ text1, text2 }) => {
           <div ref={div2Rf}></div>
           <div ref={div3Rf}></div>
         </div>
+
       </div>
+      {/* <a href="">
+
+      </a> */}
       <hr />
     </div>
   );

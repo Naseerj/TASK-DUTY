@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import NewTask from "./Pages/NewTask/NewTask";
 // import Test from "./Pages/Test/Test";
 import NewTask from "./Pages/NewTask/NewTask";
-import Test2 from "./Pages/EditTask/Test2";
+import Test2 from "./Pages/EditTask/EditTask";
 
 function App() {
   return (

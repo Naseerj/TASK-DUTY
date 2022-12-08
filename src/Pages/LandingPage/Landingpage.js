@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import './Landingpage.css'
 import Bro from '../../Images/bro.svg'
 import Navbar from "../../Navbar/Navbar";
+import Sis from '../../Images/WhatsApp Image 2022-11-23 at 13.23.48.jpg'
 
 
 const Landingpage = () => {
+const imgRef = useRef()
+  const imgRef2 = useRef()
+
+
+
+  // setInterval(() => {
+  //   if(imgRef === Bro){
+  //     imgRef.src = Sis
+  //   }else{
+  //     console.log('hello')
+  //   }
+  // console.log('hiii')
+  // }, 5000);
   return (
     <div>
       <Navbar text1= {'New Task'} text2 = {'All Tasks'} />
@@ -20,7 +34,8 @@ const Landingpage = () => {
       <button className="btn1">Go to My Tasks</button>
       </div>
       <div>
-        <img className="bro" src={Bro} alt="" />
+        <img ref={imgRef} className="bro" src={Bro} alt="" />
+        {/* <img ref={imgRef2} src={Sis} alt="" /> */}
       </div>
      </div>
     </div>

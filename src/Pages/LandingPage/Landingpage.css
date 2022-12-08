@@ -184,3 +184,29 @@ text-align: left;
     padding: 40px;
   }
 }
+
+@media (max-width:400px) {
+  .parentdiv{
+    padding: 30px;
+  }
+}
+
+@media (max-width:340px) {
+  .parentdiv{
+    padding: 10px;
+  }
+  .textdiv{
+    width: 280px;
+  }
+  .ptag1{
+    font-size: 18px;
+    width: 280px;
+  }
+  .header1{
+    font-size: 28px;
+    width: 280px;
+  }
+  .bro{
+    width: 280px;
+  }
+}
